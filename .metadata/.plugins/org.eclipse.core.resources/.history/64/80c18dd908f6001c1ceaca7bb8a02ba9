@@ -1,0 +1,32 @@
+package com.spring.Question;
+
+import java.util.List;
+
+public class Question {
+	  private int questionId;
+	    private String question;
+	    private  List<String> answers;
+
+	    public Question(int questionId, String question, List<String> answer) {
+	        this.questionId = questionId;
+	        this.question = question;
+	        this.answers = answer;
+	    }
+
+	    public Question() {
+	    
+	    }
+
+	    public int getQuestionId() {
+	        return questionId;
+	    }
+
+	    public String getQuestion() {
+	        return question;
+	    }
+
+	    public List<String> getAnswer() {
+	        return answers;
+	    }
+	
+}

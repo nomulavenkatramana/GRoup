@@ -1,0 +1,8 @@
+package com.spring.Question;
+
+public class CaseStudy1 {
+public static void main(String args[]) {
+	
+ClassPathXmlApplicationContext
+}
+}

@@ -1,0 +1,54 @@
+package com.spring.assignment6;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class DBConfig {
+	@Value("$()")
+private String dbDriverClass;
+private String dbUrl;
+private String sbUser;
+private String dbPwd;
+
+@Autowired
+public DBConfig(String dbDriverClass, String dbUrl, String sbUser, String dbPwd) {
+	super();
+	this.dbDriverClass = dbDriverClass;
+	this.dbUrl = dbUrl;
+	this.sbUser = sbUser;
+	this.dbPwd = dbPwd;
+}
+
+public DBConfig() {
+	super();
+}
+
+public String getDbDriverClass() {
+	return dbDriverClass;
+}
+public void setDbDriverClass(String dbDriverClass) {
+	this.dbDriverClass = dbDriverClass;
+}
+public String getDbUrl() {
+	return dbUrl;
+}
+public void setDbUrl(String dbUrl) {
+	this.dbUrl = dbUrl;
+}
+public String getSbUser() {
+	return sbUser;
+}
+public void setSbUser(String sbUser) {
+	this.sbUser = sbUser;
+}
+public String getDbPwd() {
+	return dbPwd;
+}
+public void setDbPwd(String dbPwd) {
+	this.dbPwd = dbPwd;
+}
+
+
+}

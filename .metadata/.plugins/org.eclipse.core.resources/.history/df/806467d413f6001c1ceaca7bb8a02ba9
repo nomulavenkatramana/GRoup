@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> 
+        
+        <bean id="questions" class="com.spring.Question.Question">
+        <property name="questionId" value="1"></property>
+        <property name="question" value="Define IoC ?"></property>
+        <property name="answers">
+        <list>
+            <value>Inversion of control</value>
+            <value>It is in Spring Frame work</value>
+         </list>
+        </property>
+        
+        </bean>
+ <bean id="questions1" class="com.spring.Question.QuestionSet">
+        <property name="questionId1" value="32"></property>
+        <property name="question1" value="Define IoC ?"></property>
+        <property name="answers1">
+        <set>
+            <value>Inversion of control</value>
+            <value>It is in Spring Frame work</value>
+         </set>
+        </property>
+        
+        </bean>
+</beans>

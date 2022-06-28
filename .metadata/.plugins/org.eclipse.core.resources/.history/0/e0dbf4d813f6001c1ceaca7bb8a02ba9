@@ -1,0 +1,24 @@
+package com.spring.Question;
+
+import org.springframework.context.event.ContextClosedEvent;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class CaseStudy1 {
+public static void main(String args[]) {
+	
+ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("appllicationContext.xml");
+
+Question ques=(Question) context.getBean("questions");
+
+System.out.println(ques.getQuestionId());
+System.out.println(ques.getQuestion());
+System.out.println(ques.getAnswers());
+
+QuestionSet ques1=(QuestionSet) context.getBean("questions1");
+
+System.out.println(ques1.getQuestionId1());
+System.out.println(ques1.getQuestion1());
+System.out.println(ques1.getAnswers1());
+context.close();
+}
+}

@@ -1,0 +1,61 @@
+package com.spring.assignments;
+
+public class Address {
+	private static final String zip = null;
+	private String street;
+	private String city;
+	private String state;
+	private String zaip;
+	private String country;
+	public Customers(String street, String city, String state, String zaip, String country) {
+		super();
+		this.street = street;
+		this.city = city;
+		this.state = state;
+		this.zaip = zaip;
+		this.country = country;
+	}
+	public Customers() {
+		super();
+	}
+	public String getStreet() {
+		return street;
+	}
+	public void setStreet(String street) {
+		this.street = street;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public String getState() {
+		return state;
+	}
+	public void setState(String state) {
+		this.state = state;
+	}
+	public String getZaip() {
+		return zaip;
+	}
+	public void setZaip(String zaip) {
+		this.zaip = zaip;
+	}
+	public String getCountry() {
+		return country;
+	}
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+	public void printAddressDetail(){
+		 
+	    System.out.println("Address Street \t\t: " + street);
+	    System.out.println("Address City \t\t: " + city);
+	    System.out.println("Address State \t\t: " + state);
+	    System.out.println("Address Zip Code \t: " + zip);
+	    System.out.println("Address Zip Code \t: " + country);
+	}
+
+}

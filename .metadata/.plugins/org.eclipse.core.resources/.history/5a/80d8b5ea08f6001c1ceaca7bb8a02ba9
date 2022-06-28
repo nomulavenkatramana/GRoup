@@ -1,0 +1,14 @@
+package com.spring.Question;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class CaseStudy1 {
+public static void main(String args[]) {
+ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("appllicationContext.xml");
+Question ques=(Question) context.getBean("questions");
+System.out.println(ques.getQuestionId());
+System.out.println(ques.getQuestion());
+System.out.println(ques.getAnswer());
+
+}
+}

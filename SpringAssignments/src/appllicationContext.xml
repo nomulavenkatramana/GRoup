@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> 
+        
+        <bean id="questions" class="com.spring.Question.Question">
+        <property name="questionId" value="1"></property>
+        <property name="question" value="Define IoC ?"></property>
+        <property name="answers">
+        <list>
+            <value>Inversion of control</value>
+            <value>It is in Spring Frame work</value>
+         </list>
+        </property>
+        
+        </bean>
+ <bean id="questions1" class="com.spring.Question.QuestionSet">
+        <property name="questionId1" value="2"></property>
+        <property name="question1" value="Define IoC ?"></property>
+        <property name="answers1">
+        <set>
+            <value>Inversion of control</value>
+            <value>It is in Spring Frame work</value>
+         </set>
+        </property>
+        
+        </bean>
+        
+        <bean id="questions2" class="com.spring.Question.QuestionMap">
+        <property name="questionId2" value="3"></property>
+        <property name="question2" value="Define IoC ?"></property>
+        <property name="answers2">
+        <map>
+            <entry key = "1" value = "Inversion of control"/>
+            <entry key = "2" value = "It is in Spring Frame work"/>
+           
+         </map>
+        </property>
+        
+        </bean>
+        
+</beans>
